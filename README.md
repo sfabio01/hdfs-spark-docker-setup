@@ -1,4 +1,4 @@
-# ID2221 Data Intensive Computing Project
+# HDFS cluster and Spark Jupyter Notebook with Docker
 
 ## Getting Started
 ### Prerequisites
