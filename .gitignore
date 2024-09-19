@@ -2,3 +2,4 @@ hdfs-docker-cluster/hadoop_datanode*/*
 !hdfs-docker-cluster/hadoop_datanode*/.gitkeep
 hdfs-docker-cluster/hadoop_namenode/*
 !hdfs-docker-cluster/hadoop_namenode/.gitkeep
+.ipynb_checkpoints/
