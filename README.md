@@ -17,15 +17,10 @@ You can access the HDFS Namenode web interface at http://localhost:9870.
 Run the load_dataset_to_hdfs.sh script to load the dataset to HDFS (if you are on Windows, run the commands in the script manually).
 
 ### Spark Jupyter Notebook Setup
-Build the Spark Jupyter Notebook image:
-```bash
-cd spark-docker-image
-docker build -t spark-python-jupyter .
-```
-
 Start the Spark Jupyter Notebook:
 ```bash
-docker run -it -p 8888:8888 -v .:/notebooks --network hdfs-docker-cluster_hdfs_network spark-python-jupyter
+cd spark-docker-image
+docker run -it -p 8888:8888 -v .:/notebooks --network hdfs-docker-cluster_hdfs_network sfabio01/spark-python-jupyter
 ```
 
 This will start a Jupyter Notebook server. To access the notebook interface, open the link outputted by the command.
