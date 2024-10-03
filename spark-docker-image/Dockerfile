@@ -17,7 +17,7 @@ RUN wget https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SP
     rm spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz
 
 # Install Jupyter and other required Python packages
-RUN pip3 install jupyter jupyterlab pyspark==${SPARK_VERSION} findspark pandas numpy matplotlib
+RUN pip3 install jupyter jupyterlab pyspark==${SPARK_VERSION} findspark pandas numpy matplotlib seaborn
 
 # Install Scala kernel for Jupyter
 # RUN curl -L -o coursier https://git.io/coursier-cli && \
